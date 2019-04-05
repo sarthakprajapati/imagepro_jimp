@@ -5,7 +5,7 @@ var Jimp = require('jimp');
 //User-Defined Function to read the images
 async function main() {
   const image = await Jimp.read('../gfg.png');
-//rotate Function having rotation as 55
+//rotate Function having rotation as 55 degree
   image.rotate(55)
   .write('rotate1.png');
 }
